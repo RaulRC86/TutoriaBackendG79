@@ -3,6 +3,7 @@ import {readFileSync} from "fs";
 import 'dotenv/config'
 import { allRoutes } from "./router.js";
 import { obtenerDB } from "./db/database.js";
+import { librosRoutes } from "./librosRoutes.js";
 
 
 const app = express();
@@ -17,6 +18,8 @@ app.get("/clients", (req, res) => {
   const leerUsuario = JSON.parse(readFileSync("./src/usuarios.json", "utf8"))
   res.send(leerUsuario)
 })
+
+app.use("/api/libros", librosRoutes)
 
 app.use("/api", allRoutes);
 
