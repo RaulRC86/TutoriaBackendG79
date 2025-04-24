@@ -4,6 +4,7 @@ import { db } from '../db/database.js';
 
 
 
+
 jest.mock('../db/database.js', () => ({
     db: {
         query: jest.fn(),
