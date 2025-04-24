@@ -7,8 +7,11 @@ export const db = new Pool({
   host: process.env.HOST,
   database: process.env.DATABASE,
   password: process.env.PASSWORD,
-  allowExitOnIdle: true,
+allowExitOnIdle: true,
 });
+
+//  console.log(process.env.USER, process.env.HOST, process.env.DATABASE, process.env.PASSWORD);
+
 
 export const obtenerDB = async () => {
   try {

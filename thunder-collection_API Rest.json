@@ -1,0 +1,132 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "API Rest",
+    "collectionId": "07307519-51b5-48e6-a2e4-e40775a95907",
+    "dateExported": "2025-04-17T04:04:14.560Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "c58bad68-e59d-4a6e-9f97-eae07ee1cda4",
+            "name": "Clientes",
+            "containerId": "",
+            "created": "2025-04-10T02:59:12.525Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "b5f23fdb-99e2-43dc-af1a-0aa5ca74c034",
+            "name": "auth",
+            "containerId": "",
+            "created": "2025-04-17T03:12:13.312Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "57faa696-79c6-4915-ac31-9025d7e619a0",
+            "name": "libros",
+            "containerId": "",
+            "created": "2025-04-17T03:22:13.206Z",
+            "sortNum": 70000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "09c68b11-f161-433a-897a-7b9d44b36c59",
+            "colId": "07307519-51b5-48e6-a2e4-e40775a95907",
+            "containerId": "c58bad68-e59d-4a6e-9f97-eae07ee1cda4",
+            "name": "GetLimit ",
+            "url": "",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-04-10T02:41:39.867Z",
+            "modified": "2025-04-10T02:41:39.867Z",
+            "headers": []
+        },
+        {
+            "_id": "95728e1c-7e50-4159-8802-7c0d6cc5cf2b",
+            "colId": "07307519-51b5-48e6-a2e4-e40775a95907",
+            "containerId": "c58bad68-e59d-4a6e-9f97-eae07ee1cda4",
+            "name": "PostCLients",
+            "url": "http://localhost:3007/api/clients",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-04-10T02:42:11.783Z",
+            "modified": "2025-04-17T03:00:04.049Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Jerlib\",\n  \"email\": \"jerlib@mail.com\",\n  \"password\":\"password\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "dadda275-287a-4702-a7bc-569e1290106b",
+            "colId": "07307519-51b5-48e6-a2e4-e40775a95907",
+            "containerId": "c58bad68-e59d-4a6e-9f97-eae07ee1cda4",
+            "name": "UpdateCliente",
+            "url": "http://localhost:3007/api/clients/7",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2025-04-10T02:44:37.055Z",
+            "modified": "2025-04-10T02:45:18.700Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":7,\n  \"nombre\": \"Darwin\",\n  \"email\": \"darwin@mail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "eb37ab34-4b24-4b7f-8471-0e276dfa608d",
+            "colId": "07307519-51b5-48e6-a2e4-e40775a95907",
+            "containerId": "c58bad68-e59d-4a6e-9f97-eae07ee1cda4",
+            "name": "GetClientes",
+            "url": "http://localhost:3007/api/clients/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2025-04-10T02:45:46.384Z",
+            "modified": "2025-04-10T02:55:18.956Z",
+            "headers": []
+        },
+        {
+            "_id": "583c16ff-ad2b-4779-b958-8d42f0be9a40",
+            "colId": "07307519-51b5-48e6-a2e4-e40775a95907",
+            "containerId": "c58bad68-e59d-4a6e-9f97-eae07ee1cda4",
+            "name": "DeleteCliente",
+            "url": "http://localhost:3007/api/clients/8",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2025-04-10T02:46:45.803Z",
+            "modified": "2025-04-10T02:47:41.617Z",
+            "headers": []
+        },
+        {
+            "_id": "0f927da3-27ef-487a-8622-d1848f28736a",
+            "colId": "07307519-51b5-48e6-a2e4-e40775a95907",
+            "containerId": "b5f23fdb-99e2-43dc-af1a-0aa5ca74c034",
+            "name": "login",
+            "url": "http://localhost:3007/api/login",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2025-04-17T03:12:39.532Z",
+            "modified": "2025-04-17T03:17:37.019Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"jerlib@mail.com\",\n  \"password\":\"password\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b56867cf-6b0b-4d95-b505-765ef992bf5d",
+            "colId": "07307519-51b5-48e6-a2e4-e40775a95907",
+            "containerId": "57faa696-79c6-4915-ac31-9025d7e619a0",
+            "name": "DeleteLibros",
+            "url": "http://localhost:3007/api/libros/3",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2025-04-17T03:22:23.395Z",
+            "modified": "2025-04-17T03:36:48.562Z",
+            "headers": []
+        }
+    ],
+    "ref": "IW_-W0sLtC8QQlmzFlpxzQ4ucI_NHC_rtpWuyG3wnpHtOA8K-OLDCKWBlHhrPbCz6CMXx8quJNzPONBji_D9QA"
+}
